@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <form method="GET" action="{% url 'chatbot' %}">
+            {% csrf_token %}
+            <h1 align="center">Django Chatbot Demo</h1>
+            <div align="center">
+                <button type="submit" height="100" width="400" style="background-color: green; color: white">Go To App</button>
+            </div>
+        </form>
+{% endblock %}
